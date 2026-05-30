@@ -33,7 +33,11 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
+const authRoutes = require('./routes/authRoutes');
+
 // ==================== Routes ====================
+
+app.use('/api/auth', authRoutes);
 
 app.use('/api', routes);
 

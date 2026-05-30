@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS documents (
   embedding VECTOR(768),
   created_at TIMESTAMP DEFAULT NOW()
 );
-
+SELECT * From document_metadata
+SELECT * From chat_history
 -- Document metadata table
 CREATE TABLE IF NOT EXISTS document_metadata (
   id TEXT PRIMARY KEY,
